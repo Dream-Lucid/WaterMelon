@@ -128,7 +128,7 @@ public class Fruit : MonoBehaviour
                     {
                         GameManager.GameManagerInstance.CombineNewFruit(fruitType, this.transform.localPosition, collision.transform.localPosition);
                         GameManager.GameManagerInstance.TotalScore += fuirtScore;
-                        GameManager.GameManagerInstance.totalScore.text = "总分:" + GameManager.GameManagerInstance.TotalScore;
+                        GameManager.GameManagerInstance.totalScore.text = "得分:" + GameManager.GameManagerInstance.TotalScore;
                         Destroy(this.gameObject);
                         Destroy(collision.gameObject);
                     }
